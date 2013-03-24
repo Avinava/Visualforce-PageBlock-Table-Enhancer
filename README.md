@@ -35,6 +35,6 @@ Usage
     
 Demo
 -
-http://blogforce9dev-developer-edition.ap1.force.com/EnhancedPageBlockTableDemo
+http://blogforce9dev-developer-edition.ap1.force.com/PageBlockTableEnhancerDemo
   
     
