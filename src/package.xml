@@ -7,6 +7,7 @@
         <name>ApexClass</name>
     </types>
     <types>
+        <members>AllDemoLink</members>
         <members>PageBlockTableEnhancer</members>
         <name>ApexComponent</name>
     </types>
@@ -16,6 +17,7 @@
     </types>
     <types>
         <members>jQuery_BlogForce9_162</members>
+        <members>jQuery_UI_1_10_2</members>
         <members>jqQueryTableSorter</members>
         <name>StaticResource</name>
     </types>
