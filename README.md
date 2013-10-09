@@ -14,9 +14,9 @@ Few features of the PageBlock Table Enhancer component
 Ajax/Rerender support
 -
 This version brings in support for rendering, the earlier version wasn't able to handle this. So incase you are rerendering your table or the parent components, you can call the "initPageBlockTableEnhancer()" method from "oncomplete" even of your commandButtons/actionFunctions/actionSupport/commandLink .
-
+```
 <apex:commandButton value="Rerender" reRender="mid" oncomplete="initPageBlockTableEnhancer()"/>
-
+```
 
 Version
 -
@@ -39,6 +39,7 @@ List of Parameters
 
 Usage
 -
+```
    <c:PageBlockTableEnhancer targetPbTableIds="mid,mid2" paginate="true" defaultPageSize="5" pageSizeOptions="5,10,20,30,40,50,100"/>    
    <apex:pageBlock >   
      <apex:pageBlockTable value="{!accounts}" var="acc" id="mid">   
@@ -48,7 +49,7 @@ Usage
       <apex:column value="{!acc.Name}"/>   
      </apex:pageBlockTable>     
    </apex:pageBlock>   
-    
+``` 
 Demo
 -
 http://blogforce9dev-developer-edition.ap1.force.com/PageBlockTableEnhancerDemo
