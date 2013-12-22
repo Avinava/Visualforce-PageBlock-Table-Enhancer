@@ -4,6 +4,7 @@
     <description>Enhance your existing/new Pageblock table just with one line of code</description>
     <types>
         <members>PageBlockTableEnhancerDemo_Con</members>
+        <members>PageBlockTableEnhancerDemo_Con_Test</members>
         <name>ApexClass</name>
     </types>
     <types>
@@ -16,9 +17,7 @@
         <name>ApexPage</name>
     </types>
     <types>
-        <members>jQuery_BlogForce9_162</members>
-        <members>jQuery_UI_1_10_2</members>
-        <members>jqQueryTableSorter</members>
+        <members>PageBlockTableEnhancerResources</members>
         <name>StaticResource</name>
     </types>
     <version>27.0</version>

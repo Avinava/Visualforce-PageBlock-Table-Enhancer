@@ -1,5 +1,5 @@
 <apex:page controller="PageBlockTableEnhancerDemo_Con" tabStyle="Account" sidebar="false">
-    <c:AllDemoLink />
+    
     
     <apex:sectionHeader title="PageBlock Table Enhancer" subtitle="Enhance your existing/new Pageblock table with one line of code"/>
     <c:PageBlockTableEnhancer targetPbTableIds="mid,mid2,mid3" paginate="true" defaultPageSize="5" pageSizeOptions="5,10,20,30,40,50,100"/>    

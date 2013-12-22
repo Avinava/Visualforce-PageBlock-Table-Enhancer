@@ -5,9 +5,9 @@
    <apex:attribute type="Integer" name="defaultPageSize" description="Default page size when pagination is implemented"/>
    <apex:attribute type="String" name="pageSizeOptions" description="A comma seperated list of integer values that will displayed as dropdown for page size"/>
    
-   <apex:includeScript value="{!URLFOR($Resource.jQuery_BlogForce9_162, 'js/jquery-1.6.2.min.js')}"/>
-   <apex:includeScript value="{!URLFOR($Resource.jqQueryTableSorter, 'jquery.tablesorter.min.js')}"/>
-   <apex:includeScript value="{!URLFOR($Resource.jqQueryTableSorter, 'jquery.tablesorter.pager.js')}"/>
+   <apex:includeScript value="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"/>
+   <apex:includeScript value="{!URLFOR($Resource.PageBlockTableEnhancerResources, 'jquery.tablesorter.min.js')}"/>
+   <apex:includeScript value="{!URLFOR($Resource.PageBlockTableEnhancerResources, 'jquery.tablesorter.pager.js')}"/>
    
    <script>
       $j = jQuery.noConflict();
@@ -70,8 +70,8 @@
               
               $j(".BlogForce9Table").bind("sortEnd",function(e) {
                   $j('.mySort').remove();
-                  $j('.headerSortDown').children().append('<apex:image value="/s.gif" styleClass="sortDesc mySort"  alt="Sorted Descending" title="Sorted Descending" /> ');
-                  $j('.headerSortUp').children().append('<apex:image value="/s.gif" styleClass="sortAsc mySort"  alt="Sorted Ascending" title="Sorted Ascending" />');
+                  $j('.tablesorter-headerDesc').find('.tablesorter-header-inner').children().append('<apex:image value="/s.gif" styleClass="sortDesc mySort"  alt="Sorted Descending" title="Sorted Descending" /> ');
+                  $j('.tablesorter-headerAsc').find('.tablesorter-header-inner').children().append('<apex:image value="/s.gif" styleClass="sortAsc mySort"  alt="Sorted Ascending" title="Sorted Ascending" />');
               });
           }
           catch(err){
